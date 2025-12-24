@@ -1,0 +1,134 @@
+{
+  "Cashew___Anthracnose": {
+    "symptoms": "Dark lesions on leaves, stems, or fruits, sometimes with sunken centers.",
+    "cause": "Fungal pathogen Colletotrichum gloeosporioides.",
+    "treatment": "Apply appropriate fungicides and remove infected plant parts.",
+    "prevention": "Use disease-free seedlings, maintain good air circulation, and rotate crops."
+  },
+  "Cashew___Gummosis": {
+    "symptoms": "Gum exudation on branches or trunk, dieback of shoots.",
+    "cause": "Bacterial or fungal infection.",
+    "treatment": "Prune infected branches and apply bactericides or fungicides.",
+    "prevention": "Avoid mechanical injury and ensure proper irrigation."
+  },
+  "Cashew___Healthy": {
+    "symptoms": "Leaves, stems, and fruits are healthy with no visible disease.",
+    "cause": "No disease present.",
+    "treatment": "No treatment needed.",
+    "prevention": "Maintain standard cultivation practices and monitor regularly."
+  },
+  "Cashew___Leaf_miner": {
+    "symptoms": "Leaves show serpentine tunnels and blotches caused by larval feeding.",
+    "cause": "Infestation by leaf miner larvae.",
+    "treatment": "Use insecticides or neem-based sprays targeting larvae.",
+    "prevention": "Regular monitoring and removal of affected leaves."
+  },
+  "Cashew___Red_rust": {
+    "symptoms": "Red powdery pustules on leaves and stems.",
+    "cause": "Fungal pathogen that forms rust pustules.",
+    "treatment": "Apply fungicides like copper oxychloride.",
+    "prevention": "Maintain spacing, remove infected debris, and avoid overhead irrigation."
+  },
+  "Cassava___Bacterial_blight": {
+    "symptoms": "Water-soaked spots on leaves that turn brown and necrotic.",
+    "cause": "Bacterial pathogen Xanthomonas spp.",
+    "treatment": "Use bactericides and remove infected leaves.",
+    "prevention": "Plant disease-free cuttings and practice crop rotation."
+  },
+  "Cassava___Brown_spot": {
+    "symptoms": "Brown circular spots on leaves leading to defoliation.",
+    "cause": "Fungal infection by Cercospora spp.",
+    "treatment": "Apply recommended fungicides and remove affected leaves.",
+    "prevention": "Ensure good air circulation and avoid waterlogging."
+  },
+  "Cassava___Green_mite": {
+    "symptoms": "Yellowing and stunted growth due to mite feeding.",
+    "cause": "Infestation by green mites (Mononychellus spp.).",
+    "treatment": "Use acaricides or neem oil sprays.",
+    "prevention": "Regular monitoring and removal of severely infested leaves."
+  },
+  "Cassava___Healthy": {
+    "symptoms": "Leaves and stems are healthy, showing no signs of disease.",
+    "cause": "No disease present.",
+    "treatment": "No treatment needed.",
+    "prevention": "Maintain standard cultivation practices."
+  },
+  "Cassava___Mosaic": {
+    "symptoms": "Mottled, pale green and yellow leaves with stunted growth.",
+    "cause": "Cassava mosaic virus infection.",
+    "treatment": "Remove and destroy infected plants.",
+    "prevention": "Use virus-free cuttings and resistant varieties."
+  },
+  "Maize___Fall_armyworm": {
+    "symptoms": "Chewed leaves with ragged edges, larvae visible.",
+    "cause": "Infestation by Spodoptera frugiperda larvae.",
+    "treatment": "Use insecticides or biological control agents.",
+    "prevention": "Monitor early and remove affected plants if necessary."
+  },
+  "Maize___Grasshopper": {
+    "symptoms": "Holes and defoliation caused by grasshopper feeding.",
+    "cause": "Infestation by grasshopper insects.",
+    "treatment": "Use insecticides or traps.",
+    "prevention": "Regular monitoring and use of barriers or netting."
+  },
+  "Maize___Healthy": {
+    "symptoms": "Leaves, stems, and cobs are healthy with no visible disease.",
+    "cause": "No disease present.",
+    "treatment": "No treatment needed.",
+    "prevention": "Maintain standard cultivation practices."
+  },
+  "Maize___Leaf_beetle": {
+    "symptoms": "Chewed leaves with small holes or skeletonized patterns.",
+    "cause": "Infestation by leaf beetles.",
+    "treatment": "Use insecticides targeting beetles.",
+    "prevention": "Regular monitoring and removal of severely affected leaves."
+  },
+  "Maize___Leaf_blight": {
+    "symptoms": "Brown or pale lesions along leaf margins, leaves may wither.",
+    "cause": "Fungal infection by Exserohilum or Bipolaris spp.",
+    "treatment": "Apply fungicides and remove infected leaves.",
+    "prevention": "Use resistant varieties and rotate crops."
+  },
+  "Maize___Leaf_spot": {
+    "symptoms": "Small circular spots on leaves that enlarge over time.",
+    "cause": "Fungal pathogen causing necrotic spots.",
+    "treatment": "Apply fungicides as recommended.",
+    "prevention": "Maintain spacing and avoid water accumulation."
+  },
+  "Maize___Streak_virus": {
+    "symptoms": "Yellow streaks on leaves, stunted growth.",
+    "cause": "Maize streak virus infection.",
+    "treatment": "Remove infected plants.",
+    "prevention": "Plant resistant varieties and control insect vectors."
+  },
+  "Tomato___Healthy": {
+    "symptoms": "Leaves, stems, and fruits are healthy with no visible disease.",
+    "cause": "No disease present.",
+    "treatment": "No treatment needed.",
+    "prevention": "Maintain good agricultural practices."
+  },
+  "Tomato___Leaf_blight": {
+    "symptoms": "Brown spots on leaves, yellow edges, may spread rapidly.",
+    "cause": "Fungal pathogens like Alternaria spp.",
+    "treatment": "Use fungicides and remove affected leaves.",
+    "prevention": "Ensure proper spacing and crop rotation."
+  },
+  "Tomato___Leaf_curl": {
+    "symptoms": "Leaves curl upwards or downwards with yellowing.",
+    "cause": "Tomato leaf curl virus transmitted by whiteflies.",
+    "treatment": "Remove infected plants immediately.",
+    "prevention": "Use resistant varieties and control whitefly populations."
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "symptoms": "Small circular spots with dark borders on leaves.",
+    "cause": "Septoria lycopersici fungus.",
+    "treatment": "Apply fungicides and remove infected leaves.",
+    "prevention": "Avoid overhead irrigation and remove debris."
+  },
+  "Tomato___Verticillium_wilt": {
+    "symptoms": "Yellowing and wilting of lower leaves, plant stunted.",
+    "cause": "Soil-borne fungus Verticillium spp.",
+    "treatment": "Remove infected plants and solarize soil.",
+    "prevention": "Plant resistant varieties and rotate crops."
+  }
+}

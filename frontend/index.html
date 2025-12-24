@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Crop Disease Detection & Advisory</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f2f7f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2b7a4b;
+      margin-bottom: 20px;
+    }
+
+    input[type="file"] {
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    button {
+      display: block;
+      background-color: #2b7a4b;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #256c42;
+    }
+
+    .result {
+      margin-top: 30px;
+      background: #e6f4ea;
+      padding: 20px;
+      border-radius: 10px;
+      line-height: 1.7;
+    }
+
+    .result h3 {
+      color: #17633d;
+      margin-top: 0;
+    }
+
+    #preview {
+      display: block;
+      max-width: 100%;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 Smart Crop Disease Detector</h1>
+
+    <input type="file" id="imageUpload" accept="image/*"/>
+    <img id="preview" src="#" alt="Image Preview" style="display:none;" />
+
+    <button onclick="predictDisease()">Predict Disease</button>
+
+    <div class="result" id="resultBox" style="display: none;">
+      <h3>Disease Prediction: <span id="predictedClass"></span></h3>
+      <p><strong>Symptoms:</strong> <span id="symptoms"></span></p>
+      <p><strong>Cause:</strong> <span id="cause"></span></p>
+      <p><strong>Treatment:</strong> <span id="treatment"></span></p>
+      <p><strong>Prevention:</strong> <span id="prevention"></span></p>
+    </div>
+  </div>
+
+  <script>
+    const imageUpload = document.getElementById("imageUpload");
+    const preview = document.getElementById("preview");
+
+    imageUpload.onchange = () => {
+      const file = imageUpload.files[0];
+      if (file) {
+        preview.src = URL.createObjectURL(file);
+        preview.style.display = "block";
+      } else {
+        preview.style.display = "none";
+      }
+    };
+
+    async function predictDisease() {
+      const file = imageUpload.files[0];
+      if (!file) {
+        alert("Please upload an image first.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("image", file);
+
+      try {
+        const response = await fetch("http://127.0.0.1:5000/predict", {
+          method: "POST",
+          body: formData,
+        });
+
+        const data = await response.json();
+
+        if (data.error) {
+          alert("Error: " + data.error);
+          return;
+        }
+
+        document.getElementById("predictedClass").textContent = data.predicted_class;
+        document.getElementById("symptoms").textContent = data.advisory.symptoms;
+        document.getElementById("cause").textContent = data.advisory.cause;
+        document.getElementById("treatment").textContent = data.advisory.treatment;
+        document.getElementById("prevention").textContent = data.advisory.prevention;
+
+        document.getElementById("resultBox").style.display = "block";
+      } catch (err) {
+        alert("Something went wrong. Check your server or console.");
+        console.error(err);
+      }
+    }
+  </script>
+</body>
+</html>
